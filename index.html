@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Qur'an Digital</title>
+
+    <!-- HUBUNGKAN CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>☪ AL-QUR'AN DIGITAL</h2>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#baca">Baca Al-Qur'an</a>
+        <a href="#tentang">Tentang</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <h2>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</h2>
+        <h1>Al-Qur'an Digital</h1>
+        <p>Temukan ketenangan dalam setiap ayat Al-Qur'an.</p>
+        <a href="#baca">Mulai Membaca</a>
+    </div>
+</section>
+
+<main id="baca">
+    <div class="heading">
+        <h1>📖 Baca Al-Qur'an</h1>
+        <p>114 Surah | 30 Juz | Arab | Latin | Terjemahan Indonesia</p>
+    </div>
+
+    <div class="layout">
+
+        <aside class="sidebar">
+            <h3>Pilih Juz</h3>
+            <div id="juzList"></div>
+
+            <h3 class="subheading">Daftar Surah</h3>
+            <input id="surahSearch" type="text" placeholder="Cari surah...">
+            <div id="surahList"></div>
+        </aside>
+
+        <section class="reader">
+            <div class="reader-header">
+                <div>
+                    <small>SEDANG DIBACA</small>
+                    <h2 id="readerTitle">Surah Al-Fatihah</h2>
+                    <p id="readerSubtitle">Memuat 7 ayat...</p>
+                </div>
+                <button id="fontButton">A+</button>
+            </div>
+
+            <div id="loading">Memuat ayat Al-Qur'an...</div>
+            <div id="errorMessage" hidden></div>
+
+            <div id="quranContent"></div>
+
+            <div class="pagination">
+                <button id="prevButton">← Sebelumnya</button>
+                <span id="pageInfo">Halaman 1</span>
+                <button id="nextButton">Selanjutnya →</button>
+            </div>
+        </section>
+    </div>
+</main>
+
+<section class="about" id="tentang">
+    <h2>Tentang Al-Qur'an Digital</h2>
+    <p>
+        Website untuk membaca Al-Qur'an lengkap dengan
+        tulisan Arab, transliterasi latin, dan terjemahan
+        bahasa Indonesia.
+    </p>
+</section>
+
+<footer>
+    <h3>☪ Al-Qur'an Digital</h3>
+    <p>Semoga kita selalu istiqamah membaca Al-Qur'an.</p>
+    <p>© 2026 wisnuislamic.</p>
+</footer>
+
+<!-- HUBUNGKAN JAVASCRIPT -->
+<script src="script.js"></script>
+
+</body>
+</html>
